@@ -1,8 +1,8 @@
 # Taller de "Principios en Filogenómica" - 15-19 Abril (Madre de Dios) y 22-24 Abril (UNTRM) 
 ## Instructors: [Oscar Alejandro Perez-Escobar](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70484) [(Royal Botanic Gardens, Kew)](https://scholar.google.com/citations?user=tSzyp6QAAAAJ&hl=es) & [Alexander Damian](https://cameron.botany.wisc.edu/staff/damian-l-alexander/) [(University of Wisconsin-Madison)](https://scholar.google.co.uk/citations?user=RwjJKcwAAAAJ&hl=th)
 ##### Este tayer esta apoyado por [Prociencia](https://prociencia.gob.pe/) & la [Swiss Orchid Foundation](https://novagenetix.ch/swiss-orchid-foundation/)
-
-Este repositorio contiene un tutorial introductorio para una práctica de filogenómica ejecutada en una máquina virtual de Ubuntu sobre portátiles con Windows. El tutorial cubre un flujo de trabajo mínimo para descargar lecturas Illumina, limpiar los datos, ensamblar loci diana, alinear genes, filtrar loci y sitios problemáticos, e inferir árboles génicos de máxima verosimilitud.
+## Introduccion
+Este repositorio contiene un tutorial introductorio para una práctica de filogenómica ejecutada en una máquina virtual de Ubuntu sobre portátiles con Windows. El tutorial cubre un flujo de trabajo mínimo para descargar lecturas Illumina, limpiar los datos, ensamblar loci in-silico, alinear genes, filtrar loci y sitios problemáticos, inferir árboles génicos de máxima verosimilitud y arboles de especies usando un metodo de "Multispecies Coalescent" (MSC).
 
 ---
 
