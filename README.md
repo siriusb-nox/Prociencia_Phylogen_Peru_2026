@@ -28,7 +28,7 @@ La práctica fue diseñada para ejecutarse en una máquina virtual de Ubuntu en 
 ### 1.2 Programas requeridos
 Para ejecutar este taller, se requieren los siguientes programas:
 
-- [VirtualBox]([citación](https://www.virtualbox.org/wiki/Downloads))
+- [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 - Ubuntu (máquina virtual)
 - Bash
 - [SRA Toolkit: `prefetch` y `fasterq-dump`](https://github.com/ncbi/sra-tools)
@@ -181,10 +181,10 @@ ls *.FNA | parallel 'echo {}'
 
 ## 3. Estructura sugerida de directorios de trabajo
 
-Una estructura ordenada de carpetas hace que la práctica sea mucho más fácil de seguir.
+Una estructura ordenada de carpetas hace que la práctica sea mucho más fácil de seguir. 
 
 ```bash
-mkdir -p ~/Documents/Phylo_work_2026/{raw_reads,trimmed,HybPiper,alignSeqs_3xCov,Taper_filt,raxml_gene_trees}
+mkdir -p /media/foldername/Phylo_work_2026_Peru/{raw_reads,trimmed,HybPiper,alignSeqs_3xCov,Taper_filt,raxml_gene_trees}
 ```
 
 También puedes crear carpetas separadas para scripts, logs y archivos de referencia.
