@@ -4,7 +4,7 @@
 ## Introduccion
 Este repositorio contiene un tutorial introductorio para una práctica de filogenómica ejecutada en una máquina virtual de Ubuntu sobre portátiles con Windows. El tutorial cubre un flujo de trabajo mínimo para descargar lecturas Illumina, limpiar los datos, ensamblar loci in-silico, alinear genes, filtrar loci y sitios problemáticos, inferir árboles génicos de máxima verosimilitud y arboles de especies usando un metodo de "Multispecies Coalescent" (MSC).
 
-En este taller, emplearemos una pequeña muestra de datos de la filogenia de orquideas de Perez-Escobar et al. (2024, [_New. Phyt._](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.19580)), que representa las cinco subfamilias mas un grupo externo (_Dioscorea_). 
+En este taller, emplearemos una pequeña muestra de datos de la filogenia de orquideas de Perez-Escobar et al. (2024, [_New. Phyt._](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.19580)), que representa las cinco subfamilias mas un grupo externo (_Dioscorea_). El objetivo del taller es lograr ensamblar una filogenia a partir de sets de datos illumina los cuales primero deben ser obtenidos de la base de datos SRA del [NCBI](https://www.ncbi.nlm.nih.gov/) asi como tambien aprender a diseñar proyectos de investigacion en filogenomica. 
 
 <p align="center">
   <img src="https://github.com/siriusb-nox/Prociencia_Phylogen_Peru_2026/blob/main/IMG/Orchid_ToL3.0_v5_OP_distproof_LR_96dpi_MQ_online_EN.jpg" alt="Orchid Tree of Life v2.0"/>
