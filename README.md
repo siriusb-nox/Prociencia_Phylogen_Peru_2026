@@ -8,7 +8,7 @@ Este repositorio contiene un tutorial introductorio para una práctica de filoge
 
 ## 1. Entorno computacional del taller
 
-La práctica fue diseñada para ejecutarse en una máquina virtual de Ubuntu en VirtualBox.
+La práctica fue diseñada para ejecutarse en una máquina virtual de Ubuntu en VirtualBox. Alternativamente, los ejercicios del taller se podran implementar en un ambiente Linux, asumiendo que todas las dependencias han sido instaladas.
 
 ### 1.1 Información de la máquina virtual
 
@@ -16,7 +16,7 @@ La práctica fue diseñada para ejecutarse en una máquina virtual de Ubuntu en 
 - **Software de virtualización:** VirtualBox
 - **Usuario:** `vboxuser`
 
-> Por motivos de seguridad, no publiques la contraseña de la máquina virtual en un repositorio público de GitHub.
+> **La contraseña de cada sesion Ubunutu sera entregada el dia de la practica**.
 
 ---
 
