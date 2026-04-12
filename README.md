@@ -3,6 +3,7 @@
 ##### Este tayer esta apoyado por [Prociencia](https://prociencia.gob.pe/) & la [Swiss Orchid Foundation](https://novagenetix.ch/swiss-orchid-foundation/)
 ## Introduccion
 Este repositorio contiene un tutorial introductorio para una práctica de filogenómica ejecutada en una máquina virtual de Ubuntu sobre portátiles con Windows. El tutorial cubre un flujo de trabajo mínimo para descargar lecturas Illumina, limpiar los datos, ensamblar loci in-silico, alinear genes, filtrar loci y sitios problemáticos, inferir árboles génicos de máxima verosimilitud y arboles de especies usando un metodo de "Multispecies Coalescent" (MSC).
+
 En este taller, emplearemos una pequeña muestra de datos de la filogenia de orquideas de Perez-Escobar et al. (2024, [_New. Phyt._](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.19580)), que representa las cinco subfamilias mas un grupo externo (_Dioscorea_). 
 
 ---
@@ -18,6 +19,25 @@ La práctica fue diseñada para ejecutarse en una máquina virtual de Ubuntu en 
 - **Usuario:** `vboxuser`
 
 > **La contraseña de cada sesion Ubuntu sera entregada el dia de la practica**.
+
+### 1.2 Programas requeridos
+Para ejecutar este taller, se requieren los siguientes programas:
+
+- [VirtualBox](citación)
+- Ubuntu (máquina virtual)
+- Bash
+- [SRA Toolkit: `prefetch` y `fasterq-dump`](citación)
+- [fastp](citación)
+- [conda](citación)
+- [HybPiper](citación)
+- [BWA](citación)
+- [MAFFT](citación)
+- [GNU Parallel](citación)
+- [Julia](citación)
+- [TAPER](citación)
+- [RAxML-NG](citación)
+- [Newick Utilities](citación)
+- utilidades estándar de UNIX: `grep`, `find`, `rename`, `cat`, `mv`, `ls`, `gzip`
 
 ---
 
