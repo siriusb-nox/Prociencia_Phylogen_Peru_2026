@@ -23,20 +23,20 @@ La práctica fue diseñada para ejecutarse en una máquina virtual de Ubuntu en 
 ### 1.2 Programas requeridos
 Para ejecutar este taller, se requieren los siguientes programas:
 
-- [VirtualBox](citación)
+- [VirtualBox]([citación](https://www.virtualbox.org/wiki/Downloads))
 - Ubuntu (máquina virtual)
 - Bash
-- [SRA Toolkit: `prefetch` y `fasterq-dump`](citación)
-- [fastp](citación)
-- [conda](citación)
-- [HybPiper](citación)
-- [BWA](citación)
-- [MAFFT](citación)
-- [GNU Parallel](citación)
-- [Julia](citación)
-- [TAPER](citación)
-- [RAxML-NG](citación)
-- [Newick Utilities](citación)
+- [SRA Toolkit: `prefetch` y `fasterq-dump`](https://github.com/ncbi/sra-tools)
+- [fastp](https://github.com/opengene/fastp)
+- [conda](https://docs.conda.io/)
+- [HybPiper](https://github.com/mossmatters/HybPiper)
+- [BWA](https://github.com/lh3/BWA)
+- [MAFFT](https://mafft.cbrc.jp/alignment/software/)
+- [GNU Parallel](https://www.gnu.org/software/parallel/)
+- [Julia](https://julialang.org/)
+- [TAPER](https://github.com/chaoszhang/TAPER)
+- [RAxML-NG](https://github.com/amkozlov/raxml-ng)
+- [Newick Utilities](https://github.com/tjunier/newick_utils)
 - utilidades estándar de UNIX: `grep`, `find`, `rename`, `cat`, `mv`, `ls`, `gzip`
 
 ---
