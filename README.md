@@ -509,9 +509,101 @@ nw_ed Orchidaceae_allSub_63g_MLtree.tre 'i & b<=20' o > Orchidaceae_allSub_63g_M
 
 Esto produce un conjunto filtrado de árboles génicos adecuado para análisis posteriores.
 
+## 8. Inferencia del árbol de especies con ASTRAL
+
+Una vez generados los árboles génicos y colapsadas las ramas débilmente soportadas, es posible inferir un **árbol de especies** usando **ASTRAL**, un método basado en cuartetos que estima el árbol de especies a partir de un conjunto de árboles génicos.
+
+### 8.1 Preparar el conjunto de árboles génicos
+
+En este taller, el archivo de entrada para ASTRAL es el conjunto de árboles génicos concatenados y filtrados:
+
+```bash
+
+Orchidaceae_allSub_63g_MLtree_20LBScoll.tre
+
+```
+
+Este archivo contiene todos los árboles génicos en formato Newick, con ramas de soporte bajo ya colapsadas.
+
+### 8.2 Ejecutar ASTRAL
+
+Crea primero una carpeta para guardar la salida:
+
+```bash
+
+mkdir -p ASTRAL
+
+```
+
+Después ejecuta ASTRAL:
+
+```bash
+
+java -jar astral.jar -i Orchidaceae_allSub_63g_MLtree_20LBScoll.tre -o ASTRAL/Orchidaceae_allSub_63g_ASTRAL.tre
+
+```
+
+Este comando:
+
+- usa como entrada el conjunto de árboles génicos filtrados
+
+- infiere un **árbol de especies** bajo el marco del **multispecies coalescent**
+
+- escribe el árbol final en formato Newick
+
+### 8.3 Interpretación general del resultado
+
+El árbol resultante:
+
+- representa una **hipótesis de relaciones entre especies**
+
+- resume la señal compartida entre múltiples árboles génicos
+
+- puede ayudar a identificar conflicto genealógico y discordancia entre loci
+
+### 8.4 Salida esperada
+
+El archivo principal será:
+
+```bash
+
+ASTRAL/Orchidaceae_allSub_63g_ASTRAL.tre
+
+```
+
+Este árbol puede visualizarse posteriormente en programas como **FigTree**, **iTOL** o **Dendroscope**.
+
+### 8.5 Versión opcional con archivo de log
+
+Si quieres guardar también el log de ejecución, puedes correr:
+
+```bash
+
+java -jar astral.jar \\
+
+  -i Orchidaceae_allSub_63g_MLtree_20LBScoll.tre \\
+
+  -o ASTRAL/Orchidaceae_allSub_63g_ASTRAL.tre \\
+
+  > ASTRAL/astral.log
+
+```
+
+### 8.6 ¿Por qué usar ASTRAL?
+
+ASTRAL es especialmente útil cuando:
+
+- distintos genes apoyan historias evolutivas diferentes
+
+- existe discordancia entre árboles génicos
+
+- se desea inferir un árbol de especies a partir de múltiples loci independientes
+
+En este contexto, ASTRAL complementa la inferencia de árboles génicos por **RAxML-NG** y permite pasar de una colección de gene trees a una hipótesis de árbol de especies.
+
 ---
 
-## 8. Notas para estudiantes
+## 9. Notas para estudiantes
 
 - Comprueba siempre que estás en el directorio correcto con `pwd`.
 - Usa `ls` con frecuencia para seguir la pista de tus archivos.
@@ -522,6 +614,6 @@ Esto produce un conjunto filtrado de árboles génicos adecuado para análisis p
 
 ---
 
-## 9. Agradecimientos
+## 10. Agradecimientos
 
 La introducción breve a Bash usada en este taller fue adaptada del tutorial de Bash empleado en el repositorio del taller de ONT del mismo autor y reformulada aquí para una práctica de filogenómica.
