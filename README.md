@@ -63,7 +63,7 @@ D. Inferencia de árboles génicos y postprocesamiento
 E. Inferencia del árbol de especies con ASTRAL
 [Ir a la subpágina](docs/08_arbol_de_especies_astral.md)
 
-![Figure 1](https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/blob/main/IMG/pipeline_overview_v0_OP_15122022.png?raw=true)
+![Figure 1](https://github.com/siriusb-nox/Prociencia_Phylogen_Peru_2026/blob/main/IMG/image.png?raw=true)
 **Figura 1**: Vista simplificada del tutorial/pipeline
 
 
