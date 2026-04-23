@@ -151,3 +151,5 @@ Este comando:
 - mantiene lecturas con umbral de calidad `q=30`
 - genera un informe HTML por muestra
 
+
+Como output, el programa produce reportes de los resultados de filtrado y de calidad, antes y despues del filtrado, en formato html.
