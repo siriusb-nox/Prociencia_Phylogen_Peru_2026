@@ -38,7 +38,7 @@ for F in *.fasta; do julia correction_multi.jl -m N -a N -c 1 $F > Taper_filt/$F
 
 Esto filtra sitios potencialmente mal alineados de cada alineamiento.
 
-### 6.3 Eliminación de archivos vacíos
+### Eliminación de archivos vacíos
 
 Tras el alineamiento o el filtrado, elimina archivos vacíos con:
 
@@ -49,7 +49,7 @@ find . -type f -empty -delete
 
 El primer comando muestra los archivos vacíos. El segundo los elimina.
 
-### 6.4 Eliminación de loci con menos de 3 secuencias
+### Eliminación de loci con menos de 3 secuencias
 
 Los loci con menos de tres secuencias no son adecuados para la inferencia de árboles génicos en este tutorial.
 
