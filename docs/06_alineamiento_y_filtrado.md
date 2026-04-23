@@ -22,7 +22,7 @@ Este comando:
 - usa una estrategia de alineamiento global iterativa
 - ajusta la orientación de las secuencias si es necesario
 
-### 6.2 Filtrado de sitios mal alineados con `TAPER`
+### Filtrado de sitios mal alineados con `TAPER`
 
 Crea primero la carpeta de salida:
 
