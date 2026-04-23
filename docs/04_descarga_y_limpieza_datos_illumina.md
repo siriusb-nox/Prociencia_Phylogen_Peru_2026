@@ -1,4 +1,4 @@
-# 4. Descarga y limpieza de datos Illumina
+# A. Descarga y limpieza de datos Illumina
 
 [← Volver al README](../README.md)
 
@@ -17,6 +17,12 @@ SRR6127594
 SRR6127593
 ERR7599286
 ERR4180009
+```
+
+El comando para descargar un solo set de datios a partir de un codigo de accesion es:
+
+```bash
+fasterq-dump ACCESSION --split-files --threads "${THREADS}" --temp "${TMPDIR}" --outdir "${FASTQ_DIR}"
 ```
 
 Guarda el siguiente script como `download_sra_fastq.sh`:
