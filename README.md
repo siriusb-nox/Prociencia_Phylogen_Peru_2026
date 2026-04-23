@@ -58,8 +58,8 @@ D. [Inferencia de árboles génicos y postprocesamiento](docs/07_arboles_genicos
 
 E. [Inferencia del árbol de especies con ASTRAL](docs/08_arbol_de_especies_astral.md)
 
-![Figure 1](https://github.com/siriusb-nox/Prociencia_Phylogen_Peru_2026/blob/main/IMG/image.png?raw=true)
-**Figura 1**: Vista simplificada del tutorial/pipeline
+![Figure 1](https://github.com/siriusb-nox/Prociencia_Phylogen_Peru_2026/blob/main/IMG/sub_model.png?raw=true)
+**Figura 1**: Algunos modelos markovianos de substitucion de nucleotidos
 
 
 ---
