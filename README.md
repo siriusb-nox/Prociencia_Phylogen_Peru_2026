@@ -48,20 +48,15 @@ Para ejecutar este taller, se requieren los siguientes programas:
 ### 1.3 Estructura del pipeline
 Este tutorial esta dividio en cuatro principales (Figura 1):
 
-A. Descarga y limpieza de datos Illumina
-[Ir a la subpágina](docs/04_descarga_y_limpieza_datos_illumina.md)
+A. [Descarga y limpieza de datos Illumina](docs/04_descarga_y_limpieza_datos_illumina.md)
 
-B. Ensamblaje de captura dirigida y recuperación de secuencias
-[Ir a la subpágina](docs/05_ensamblaje_y_recuperacion_hybpiper.md)
+B. [Ensamblaje de captura dirigida y recuperación de secuencias](docs/05_ensamblaje_y_recuperacion_hybpiper.md)
 
-C. Alineamiento por locus y filtrado
-[Ir a la subpágina](docs/06_alineamiento_y_filtrado.md)
+C. [Alineamiento por locus y filtrado](docs/06_alineamiento_y_filtrado.md)
 
-D. Inferencia de árboles génicos y postprocesamiento
-[Ir a la subpágina](docs/07_arboles_genicos_raxml_ng.md)
+D. [Inferencia de árboles génicos y postprocesamiento](docs/07_arboles_genicos_raxml_ng.md)
 
-E. Inferencia del árbol de especies con ASTRAL
-[Ir a la subpágina](docs/08_arbol_de_especies_astral.md)
+E. [Inferencia del árbol de especies con ASTRAL](docs/08_arbol_de_especies_astral.md)
 
 ![Figure 1](https://github.com/siriusb-nox/Prociencia_Phylogen_Peru_2026/blob/main/IMG/image.png?raw=true)
 **Figura 1**: Vista simplificada del tutorial/pipeline
