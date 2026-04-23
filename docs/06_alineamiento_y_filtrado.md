@@ -4,6 +4,9 @@
 
 El alineamiento múltiple de secuencias es el paso en el que se organizan secuencias homólogas de distintas especies para que sus posiciones sean comparables entre sí. La idea central es que cada columna del alineamiento represente una hipótesis de homología posicional, es decir, que los nucleótidos o aminoácidos en la misma columna descienden de una misma posición ancestral. Para lograr esto, los programas de alineamiento introducen gaps cuando ha habido inserciones o deleciones, de forma que las regiones comparables queden alineadas correctamente. El alineamiento es un paso crucial porque constituye la base de la inferencia filogenética: si el alineamiento es incorrecto, el árbol resultante también puede serlo. 
 
+![Figure 1](https://github.com/siriusb-nox/Prociencia_Phylogen_Peru_2026/blob/main/IMG/image_align.png?raw=true)
+**Figura 1**: Un diagrama conceptual mostrando el proceso de alineado de secuencias  
+
 ### Alineamiento de loci con `MAFFT`
 
 Ejecuta los alineamientos por locus en paralelo:
