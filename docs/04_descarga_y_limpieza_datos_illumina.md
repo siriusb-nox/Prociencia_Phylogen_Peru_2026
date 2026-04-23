@@ -114,7 +114,7 @@ for f in *_*.fastq.gz; do
 done
 ```
 
-### 4.3 Recorte de lecturas con `fastp`
+### Recorte de lecturas con `fastp`
 
 El conjunto final de muestras usado en la práctica tras el recorte fue:
 
