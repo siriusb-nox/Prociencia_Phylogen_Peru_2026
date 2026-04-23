@@ -19,13 +19,12 @@ ERR7599286
 ERR4180009
 ```
 
-El comando para descargar un solo set de datios a partir de un codigo de accesion es:
+El comando para descargar un solo set de datos a partir de un código de accesión es:
 
 ```bash
-fasterq-dump ACCESSION --split-files --threads "${THREADS}" --temp "${TMPDIR}" --outdir "${FASTQ_DIR}"
+fasterq-dump ACCESSION --split-files --threads 2 
 ```
-
-Guarda el siguiente script como `download_sra_fastq.sh`:
+Para bajar múltiples archivos con un solo comando, podemos ejecutar el siguiente script (guarda el siguiente texto como `download_sra_fastq.sh`):
 
 ```bash
 #!/usr/bin/env bash
