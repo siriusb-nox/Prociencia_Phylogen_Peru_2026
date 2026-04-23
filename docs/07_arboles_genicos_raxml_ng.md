@@ -13,31 +13,60 @@ Existen diferentes maneras de inferir arboles filogeneticos: Los principales met
 ![Figure 1](https://github.com/siriusb-nox/Prociencia_Phylogen_Peru_2026/blob/main/IMG/sub_models.png?raw=true)
 **Figura 1**: Algunos modelos markovianos de substitucion de nucleotidos
 
-
-## 7.1 Inferencia de árboles génicos con `RAxML-NG`
+Crea primero una carpeta de salida:
 
 ```bash
 mkdir -p ../raxml_gene_trees
+```
+
+Después ejecuta todos los alineamientos filtrados en paralelo:
+
+```bash
 ls *.fasta | parallel -j 2 'raxml-ng --all --msa {} --model GTR+G --bs-trees 100 --threads 2 --seed 4321 --prefix ../raxml_gene_trees/{.}'
 ```
 
-## 7.2 Organización de las salidas de RAxML-NG
+Este comando:
+
+- ejecuta un análisis de RAxML-NG por locus
+- infiere un árbol de máxima verosimilitud bajo `GTR+G`
+- realiza 100 réplicas de bootstrap
+- produce árboles por locus con soportes de bootstrap
+
+### Organización de las salidas de RAxML-NG
+
+Crea carpetas para ordenar las salidas:
 
 ```bash
 mkdir -p output_byproduct MLtrees_support
+```
+
+Después mueve los archivos:
+
+```bash
 mv *raxml.* output_byproduct/
 mv *.support MLtrees_support/
 ```
 
-## 7.3 Renombrar y concatenar árboles con soporte
+### Renombrar y concatenar árboles con soporte
+
+Dentro de la carpeta que contiene los árboles con soporte, renómbralos de `*.support` a `*.support.tre`:
 
 ```bash
 rename 's/\.support$/.support.tre/' *.support
+```
+
+Después concaténalos en un único archivo:
+
+```bash
 cat *.tre > Orchidaceae_allSub_63g_MLtree.tre
 ```
 
-## 7.4 Colapsar ramas con soporte débil
+### Colapsar ramas con soporte débil
+
+Usa Newick Utilities para colapsar ramas con soporte bootstrap menor o igual a 20:
 
 ```bash
 nw_ed Orchidaceae_allSub_63g_MLtree.tre 'i & b<=20' o > Orchidaceae_allSub_63g_MLtree_20LBScoll.tre
 ```
+
+Esto produce un conjunto filtrado de árboles génicos adecuado para análisis posteriores.
